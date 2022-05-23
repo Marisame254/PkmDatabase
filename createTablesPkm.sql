@@ -16,6 +16,11 @@ CREATE TABLE classfications (
   classfication VARCHAR(55) NOT NULL
 );
 
+create TABLE abilities (
+  abilityID INTEGER PRIMARY KEY,
+  ability VARCHAR(30) NOT NULL
+)
+
 CREATE TABLE pokemons(
   pokemonID INTEGER PRIMARY KEY,
   name VARCHAR(15) NOT NULL,
