@@ -24,6 +24,7 @@ create TABLE abilities (
 
 CREATE TABLE pokemons(
   pokemonID INTEGER PRIMARY KEY,
+  generation INTEGER NOT NULL,
   name VARCHAR(15) NOT NULL,
   hp INTEGER NOT NULL,
   attack INTEGER NOT NULL,
@@ -31,6 +32,7 @@ CREATE TABLE pokemons(
   sp_attack INTEGER NOT NULL,
   sp_defense INTEGER NOT NULL,
   speed INTEGER NOT NULL,
+  base_total INTEGER NOT NULL,
   type INTEGER REFERENCES types(typeID),
   classfication INTEGER REFERENCES classfications(classficationID)
 );
