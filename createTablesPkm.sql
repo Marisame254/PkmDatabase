@@ -2,6 +2,7 @@
 
 DROP TABLE IF EXISTS types CASCADE;
 DROP TABLE IF EXISTS classfications CASCADE;
+Drop TABLE IF EXISTS abilities CASCADE;
 DROP TABLE IF EXISTS pokemons CASCADE;
 
 -- Create the tables
@@ -19,7 +20,7 @@ CREATE TABLE classfications (
 create TABLE abilities (
   abilityID INTEGER PRIMARY KEY,
   ability VARCHAR(30) NOT NULL
-)
+);
 
 CREATE TABLE pokemons(
   pokemonID INTEGER PRIMARY KEY,
