@@ -25,7 +25,7 @@ create TABLE abilities (
 CREATE TABLE pokemons(
   generation INTEGER NOT NULL,
   pokemonID INTEGER PRIMARY KEY,
-  name VARCHAR(15) NOT NULL,
+  name VARCHAR(20) NOT NULL,
   hp INTEGER NOT NULL,
   attack INTEGER NOT NULL,
   defense INTEGER NOT NULL,
