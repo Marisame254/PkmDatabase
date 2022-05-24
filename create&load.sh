@@ -1,7 +1,7 @@
 #! usr/bin/zsh
 
 echo "Creating Tables"
-psql -U nue -f createTablesPkm.sql
+psql -U nue -d pokemondb -f createTablesPkm.sql
 
 
 echo "Populating types table"
