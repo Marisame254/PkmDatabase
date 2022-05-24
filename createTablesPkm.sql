@@ -33,7 +33,8 @@ CREATE TABLE pokemons(
   sp_defense INTEGER NOT NULL,
   speed INTEGER NOT NULL,
   base_total INTEGER NOT NULL,
-  type INTEGER REFERENCES types(typeID),
-  classfication INTEGER REFERENCES classfications(classficationID)
+  type1ID INTEGER REFERENCES types(typeID),
+  type2ID INTEGER REFERENCES types(typeID),
+  classficationID INTEGER REFERENCES classfications(classficationID)
 );
 
