@@ -23,8 +23,8 @@ create TABLE abilities (
 );
 
 CREATE TABLE pokemons(
-  pokemonID INTEGER PRIMARY KEY,
   generation INTEGER NOT NULL,
+  pokemonID INTEGER PRIMARY KEY,
   name VARCHAR(15) NOT NULL,
   hp INTEGER NOT NULL,
   attack INTEGER NOT NULL,
