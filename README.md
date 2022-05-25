@@ -30,8 +30,12 @@ psql -U user -h localhost -d pokemondb -c "\dt"
 
 ## Create&Load script
 
-The ***create&load.sh*** is a script that automatic creates the tables in the database an then populate the tables with all csv in the data directory.
+The ***create&load.sh*** is a script that automatic creates the tables in the database an then populate the tables with all csv in the data directory. To use this script put the following command from the command line:
+
+```bash
+bash create\&load.sh
+```
 
 ## Data Visualization
 
-In the ***PkmDataVisualization.ipynb***
+The ***PkmDataVisualization.ipynb*** file has many visualizations from de pokemon.csv.
