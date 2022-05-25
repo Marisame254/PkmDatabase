@@ -12,9 +12,17 @@ This repository create a pokemon database with all stats for each pokemon until 
 
 These csv files where created in the ***PkmDataBase.ipynb***, check the file to know how where created.
 
+## Create the Database in postgreSQL
+
+To create a database put the following command from the command line:
+
+``` bash
+psql -U user -h localhost -c"create database pokemondb;"
+```
+
 ## Tables created in PostgreSQL
 
-The ***createTablesPkm.sql*** create the tables in a database named pokemonDB, the next imagen show the tables created in PostgresSQL. To use the file, you need to use the command line and put this:
+The ***createTablesPkm.sql*** create the tables in a database named pokemondb, the next imagen show the tables created in PostgresSQL. To use the file, you need to use the command line and put this:
 
 ``` bash
 psql -U user -h localhost -d pokemondb -f createTablesPkm.sql
@@ -30,10 +38,16 @@ psql -U user -h localhost -d pokemondb -c "\dt"
 
 ## Create&Load script
 
-The ***create&load.sh*** is a script that automatic creates the tables in the database an then populate the tables with all csv in the data directory. To use this script put the following command from the command line:
+The ***create&load.sh*** is a script that automatic creates the tables in the database an then populate the tables with all csv in the data directory. *In the script were defined my user in postgreSQL, please change with your user before you use the command bellow*. To use this script put the following command from the command line:
 
 ```bash
 bash create\&load.sh
+```
+
+If the command doesn't work, please add to all commands in load&create.sh `-h localhost`, the commands will look like this:
+
+```bash
+... | psql -U user -h localhost -d pokemondb
 ```
 
 ## Data Visualization
