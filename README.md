@@ -34,4 +34,4 @@ The ***create&load.sh*** is a script that automatic creates the tables in the da
 
 ## Data Visualization
 
-In the ***PkmDataVisualization.ipynb*** 
+In the ***PkmDataVisualization.ipynb***
