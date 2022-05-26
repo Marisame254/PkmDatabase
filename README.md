@@ -4,11 +4,10 @@
 
 This repository create a pokemon database with all stats for each pokemon until 7 generation. In the data directory is stored the csv files that contains all data about pokemos, the csv files are:
 
-1. abilities.csv
-2. againsts.csv
-3. classfications.csv
-4. pokemons.csv
-5. types.csv
+1. againsts.csv
+2. classfications.csv
+3. pokemons.csv
+4. types.csv
 
 These csv files where created in the ***PkmDataBase.ipynb***, check the file to know how where created.
 
