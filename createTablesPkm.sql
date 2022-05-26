@@ -2,7 +2,6 @@
 
 DROP TABLE IF EXISTS types CASCADE;
 DROP TABLE IF EXISTS classfications CASCADE;
-DROP TABLE IF EXISTS abilities CASCADE;
 DROP TABLE IF EXISTS againsts CASCADE;
 DROP TABLE IF EXISTS pokemons CASCADE;
 
@@ -16,11 +15,6 @@ CREATE TABLE types (
 CREATE TABLE classfications (
   classficationID INTEGER PRIMARY KEY,
   classfication VARCHAR(55) NOT NULL
-);
-
-CREATE TABLE abilities (
-  abilityID INTEGER PRIMARY KEY,
-  ability VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE againsts (
@@ -59,6 +53,7 @@ CREATE TABLE pokemons(
   type1ID INTEGER REFERENCES types(typeID),
   type2ID INTEGER REFERENCES types(typeID),
   classficationID INTEGER REFERENCES classfications(classficationID),
+  abilities VARCHAR(100) NOT NULL,
   againstID INTEGER REFERENCES againsts(againstID)
 );
 
